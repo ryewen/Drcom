@@ -88,10 +88,12 @@ if IS_TEST:
 
 
 def log(*args, **kwargs):
-    s = ' '.join(args)
-    print s
+    #s = ' '.join(args)
+    #print s
     if DEBUG:
-        with open(LOG_PATH,'a') as f:
+        s = ' '.join(args)
+    	print s
+	with open(LOG_PATH,'a') as f:
             f.write(s + '\n')
 
 def challenge(svr,ran):
