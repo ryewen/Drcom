@@ -1,7 +1,7 @@
 #!/bin/sh
 
 python="python"
-drcompath="/usr/share/drcom/latest-wired.py"
+drcompath="/tmp/latest-wired.py"
 
 ps |while read str
 do 
