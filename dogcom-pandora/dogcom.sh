@@ -1,8 +1,8 @@
 #!/bin/sh
 
-#!/bin/sh
-
-cmd='/tmp/dogcom_pandora_once'
+dir='/etc/storage/'
+app='dogcom_pandora_once'
+cmd=$dir$app
 
 ps |while read str
 do
@@ -25,6 +25,6 @@ do
         done
 done
 
-cmd='/tmp/dogcom_pandora_once -m dhcp -c /tmp/dogcom.conf'
+cmd=$cmd' -m dhcp -c '$dir'dogcom.conf'
 
 $cmd &

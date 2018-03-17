@@ -1,6 +1,8 @@
 #!/bin/sh
 
-cmd='/tmp/dogcom_pandora_one'
+dir='/etc/storage/'
+app='dogcom_pandora_once'
+cmd=$dir$app
 
 ps |while read str
 do 
