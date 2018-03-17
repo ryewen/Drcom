@@ -2,7 +2,7 @@
 
 #!/bin/sh
 
-cmd='/tmp/dogcom_pandora'
+cmd='/tmp/dogcom_pandora_once'
 
 ps |while read str
 do
@@ -25,6 +25,6 @@ do
         done
 done
 
-cmd='/tmp/dogcom_pandora -m dhcp -c /tmp/dogcom.conf'
+cmd='/tmp/dogcom_pandora_once -m dhcp -c /tmp/dogcom.conf'
 
 $cmd &

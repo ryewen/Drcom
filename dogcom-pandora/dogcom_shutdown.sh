@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cmd='/tmp/dogcom_pandora'
+cmd='/tmp/dogcom_pandora_one'
 
 ps |while read str
 do 
